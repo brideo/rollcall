@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'" />
+    <title>Rollcall</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="scroll">
+      <header>
+        <h1>Claude Code sessions</h1>
+        <span id="summary" class="summary"></span>
+      </header>
+
+      <section id="setup" hidden>
+        <p id="setup-message">Hooks are not installed, so sessions cannot report in yet.</p>
+        <button id="install" class="button primary" type="button">Install hooks</button>
+      </section>
+
+      <ul id="list"></ul>
+
+      <header class="section">
+        <h1>Today</h1>
+        <span id="task-summary" class="summary"></span>
+      </header>
+
+      <ul id="tasks"></ul>
+
+      <form id="task-form">
+        <input id="task-title" type="text" maxlength="160" placeholder="Add a task for today" aria-label="Task" spellcheck="false" />
+        <input id="task-client" type="text" maxlength="60" placeholder="Client" aria-label="Client" list="client-options" spellcheck="false" />
+        <button class="button" type="submit">Add</button>
+        <datalist id="client-options"></datalist>
+      </form>
+    </div>
+
+    <footer>
+      <span>This Mac only</span>
+      <button id="quit" class="button quiet" type="button">Quit</button>
+    </footer>
+
+    <script src="../dist/src/app/renderer.js"></script>
+  </body>
+</html>

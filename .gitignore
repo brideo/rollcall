@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+
+# Private planning notes and local environment
+*scope.md
+.env*
+.claude/
+*.log
