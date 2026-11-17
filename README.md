@@ -78,3 +78,7 @@ With `ticket_prefixes` empty, any `ABC-123` key is detected from the branch name
 | `src/shared/transcript.ts` | The only code that reads the undocumented transcript format |
 | `src/mcp/server.ts` | MCP server |
 | `src/app/`, `ui/` | Electron menu bar app |
+
+## Licence
+
+MIT. See [LICENSE](LICENSE).
