@@ -4,6 +4,10 @@ A Mac menu bar app that lists every Claude Code session running on this machine 
 
 Everything stays on this Mac. Nothing here makes a network call.
 
+<img src="docs/screenshot.png" alt="The Rollcall popover: three Claude Code sessions, one waiting for permission, above a to-do list for the day grouped by client" width="400">
+
+Example data: the sessions, clients and tasks shown are made up.
+
 ## Run it
 
 ```bash
